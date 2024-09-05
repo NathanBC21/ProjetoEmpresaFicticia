@@ -25,7 +25,7 @@ public class FuncionarioService {
     public Optional<Funcionario> findById(Long id) {
         return funcionarioRepository.findById(id);
     }
-    //teste
+
     public Funcionario update(Funcionario funcionario) {
         Funcionario salvo = funcionarioRepository.findById(funcionario.getCodigo()).
                 orElseThrow(() ->
